@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Mannan | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-left: 20px;
+        }
+        nav a:hover {
+            color: #38bdf8;
+         }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        h1:hover {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 550px;
+        }
+
+        .btn {
+           
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 28px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(56, 189, 248, 0.2);
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+            transform: translateY(-3px);
+
+        }
+
+        .skills {
+            text-align: center;
+            padding: 35px 20px 60px;
+        }
+
+        .skills h2 {
+            margin-bottom: 25px;
+        }
+
+        .skill-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 18px 30px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 20px;
+            }
+
+            nav a {
+                margin-left: 10px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 30px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+        .projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.projects h2 {
+    margin-bottom: 25px;
+}
+
+.project-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 25px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    display: inline-block;
+    background: #334155;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-right: 6px;
+    font-size: 13px;
+}
+    #contact {
+  text-align: center;
+  padding: 50px 20px;
+  background: #1e293b;
+  color: white;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+#contact h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+#contact p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+    footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #cbd5e1;
+    font-size: 14px;
+    border-top: 1px solid #334155;
+}
+    h1 span {
+    color: #38bdf8;
+    transition: color 0.3s ease;
+}
+
+h1 span:hover {
+    color: white;
+    cursor: pointer;
+}
+    .cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+    
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cv-button {
+        padding: 10px 18px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+    <h2>Mannan.</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+</nav>
+    <section class="hero">
+        <h1>Hello, I'm <span>Abdul Mannan</span></h1>
+        
+<a href="./Abdul_Mannan_Resume.pdf" download class="cv-button">
+    Download My CV
+</a>
+
+        <p>
+            I'm a beginner Frontend Developer learning to build
+            clean, modern and responsive websites using HTML and CSS.
+        </p>
+        <a href="#skills" class="btn">Explore My Skills</a>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Learning JavaScript</div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I'm Abdul Mannan, an aspiring Frontend Developer
+        passionate about creating clean, modern and responsive
+        websites. I enjoy learning HTML and CSS and improving
+        my web development skills through practical projects.
+    </p>
+    </section>
+
+    <section class="projects" id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+        <h3>Personal Portfolio</h3>
+        <p>A responsive personal website built using HTML and CSS.</p>
+        <span>HTML5</span>
+        <span>CSS3</span>
+    </div>
+</section>
+    <section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: awanmannan5@gmail.com</p>
+  <p>Feel free to contact me!</p>
+</section>
+<footer>
+  <p>© 2026 Abdul Mannan. All rights reserved.</p>
+</footer>
+</body>
+</html>
